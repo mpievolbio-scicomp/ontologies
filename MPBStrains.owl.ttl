@@ -1,0 +1,151 @@
+@prefix : <http://raineylab.evolbio.mpg.de/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix mpb: <http://raineylab.evolbio.mpg.de/> .
+@prefix mpbprop: <http://raineylab.evolbio.mpg.de/straindb/properties/> .
+@prefix mpbstrain: <http://raineylab.evolbio.mpg.de/straindb/strains/> .
+
+
+<http://purl.obolibrary.org/obo/mpbstrains/> rdf:type owl:Ontology .
+
+mpb:strain a owl:Thing ;
+    rdfs:subClassOf obo:NCIT_C164632 ;
+    rdfs:label "Strain" .
+
+mpbprop:sId a owl:DataTypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "MPB number" ;
+    rdfs:domain mpb:strain .
+
+
+mpbprop:name a owl:DataTypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "Name" ;
+    rdfs:domain mpb:strain .
+
+mpbprop:id a owl:DataTypeProperty ;
+    rdfs:range xsd:int ;
+    rdfs:label "ID" ;
+    rdfs:domain mpb:strain .
+
+mpbprop:species a owl:DataTypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "Species" ;
+    rdfs:domain mpb:strain .
+
+mpbprop:strain a owl:DataTypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "Strain" ;
+    rdfs:domain mpb:strain .
+
+mpbprop:genotype a owl:DataTypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "Genotype" ;
+    rdfs:domain mpb:strain .
+
+mpbprop:phenotype a owl:DataTypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "Phenotype" ;
+    rdfs:domain mpb:strain .
+
+mpbprop:constructionIsolationNotesAndSource a owl:DataTypeProperty ;
+    rdfs:label "Construction/isolation notes and source";
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:parent a owl:DataTypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "Parent" ;
+    rdfs:domain mpb:strain .
+
+mpbprop:resistanceMarker a owl:DataTypeProperty ;
+    rdfs:label "Resistance marker" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:accession a owl:DataTypeProperty ;
+    rdfs:label "Accession" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:owner a owl:DataTypeProperty ;
+    rdfs:label "Owner" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:freezer a owl:DataTypeProperty ;
+    rdfs:label "Freezer" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:rack a owl:DataTypeProperty ;
+    rdfs:label "Rack/Drawer" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:box a owl:DataTypeProperty ;
+    rdfs:label "Box" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:positionRow a owl:DataTypeProperty ;
+    rdfs:label "Position Row" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:positionCol a owl:DataTypeProperty ;
+    rdfs:label "Position Col" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:dateCreated a owl:DataTypeProperty ;
+    rdfs:label "Date created"^^xsd:date ;
+    rdfs:range xsd:date ;
+    rdfs:domain mpb:strain .
+
+mpbprop:pbr a owl:DataTypeProperty ;
+    rdfs:label "PBR#" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:importDate a owl:DataTypeProperty ;
+    rdfs:label "Import date"^^xsd:date ;
+    rdfs:range xsd:date ;
+    rdfs:domain mpb:strain .
+
+mpbprop:importDetail a owl:DataTypeProperty ;
+    rdfs:label "Import detail" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:previousLocation a owl:DataTypeProperty ;
+    rdfs:label "Previous location" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:quartzySerialNumber a owl:DataTypeProperty ;
+    rdfs:label "Quartzy Serial Number" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:additionalInfo a owl:DataTypeProperty ;
+    rdfs:label "Additional Info" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:comments a owl:DataTypeProperty ;
+    rdfs:label "Comments" ;
+    rdfs:range xsd:string ;
+    rdfs:domain mpb:strain .
+
+mpbprop:dateSubmitted a owl:DataTypeProperty ;
+    rdfs:label "Date submitted"^^xsd:date ;
+    rdfs:range xsd:date ;
+    rdfs:domain mpb:strain .
+
+mpbprop:active a owl:DataTypeProperty ;
+    rdfs:label "Active" ;
+    rdfs:range xsd:bool ;
+    rdfs:domain mpb:strain .
